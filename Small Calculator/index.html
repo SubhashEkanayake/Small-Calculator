@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Small Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="outer">
+        <div class="inner">
+
+            <div class="top">
+                <input type="number" id="inputEl" class="input">
+            </div>
+
+            <div class="bottom">
+                <button onclick="execute('+')"> + </button>
+                <button onclick="execute('-')">-</button>
+                <button onclick="execute('*')">*</button>
+                <button onclick="execute('/')">/</button>
+                <button onclick="execute('%')">%</button>
+                <br>
+            </div>
+
+            <div class="outChange">
+                <span id="num1">?</span>
+                <span id="op">__</span>
+                <span id="num2">?</span>
+                <span> = </span>
+                <span id="ans">?</span>
+            </div>
+
+            <div class="clr">
+                <button id="btn-clear">Clear</button>
+            </div>
+
+        </div>
+        
+    </div>
+
+
+
+    <script src="main.js"></script>
+</body>
+</html>
